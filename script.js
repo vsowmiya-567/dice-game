@@ -42,6 +42,8 @@ function btn11(){
     if(score1 >=20 ){
     
         winner.innerText = "player 1 wins!";
+        btn1.disabled = true;
+        btn2.disabled = true;
     }
 
    
@@ -69,6 +71,9 @@ function btn22(){
 {
 
     winner.innerText = "player 2 wins!";
+    btn1.disabled = true;
+    btn2.disabled = true;
+    
 
 }
 
@@ -78,6 +83,8 @@ function reset(){
     p1score.textContent = 0;
     p2score.textContent = 0;
     winner.innerText = "";
+    score1=0;
+    score2=0;
    
 
 }
